@@ -10,7 +10,7 @@
   <div id='title'>
 
     <div class="container">
-      <button class="fill" id="filll" onclick="playAudio(musicLink);this.remove();next();">Janji Ga
+      <button class="fill" id="filll" onclick="playAudio('1020.MP3');this.remove();next();">Janji Ga
         nangis?</button>
       <div class="atapuu">
         <div id="atapu"></div>
@@ -148,8 +148,8 @@
   }
 </style>
 <script src='https://cdn.jsdelivr.net/npm/vara@1.4.0/lib/vara.min.js'></script>
+<script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
 <script>
-  let musicLink = 'https://drive.google.com/file/d/1rjrget4Q4e7gskeUU1OkgLML3EDzQk8l/view';
   function playAudio(audioname) {
     let audio = new Audio(audioname);
     audio.play();
